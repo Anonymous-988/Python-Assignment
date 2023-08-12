@@ -1,0 +1,13 @@
+set1 = set([1,2,3,4,1,2,3,5,6])
+print(f"Set Before: {set1}")
+set1.add(7)
+print(f"Add Element using Add(): {set1}")
+set1 = set1.union(set([7,8,9]))
+print(f"Add Element using Union(): {set1}")
+set1.update(set([9,10]))
+print(f"Add Element using Update(): {set1}")
+
+set1.pop()
+print(f"Remove Element using Pop(): {set1}")
+set1.remove(10)
+print(f"Remove Element using Pop(): {set1}")
