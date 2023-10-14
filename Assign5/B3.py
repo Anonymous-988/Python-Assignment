@@ -18,7 +18,7 @@ combinedDict = {}
 #         combinedDict[ele] = dict2[ele]
 
 
-# Using Counter from Collections module
+# Using Counter from Collections modules
 combinedDict = Counter(dict1) + Counter(dict2)
 
 print(f"New Dictionary: {combinedDict}")
