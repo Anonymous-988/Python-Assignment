@@ -41,16 +41,16 @@ while True:
             subMark.append((subject, mark))
         studentObj = Student(rollNo, name, subMark)
         students[rollNo] = studentObj
-        print("Student {rollNo} added successfully.")
+        print(f"Student {rollNo} added successfully.")
 
     elif choice == "2":
         rollNo = input("Enter roll no to delete: ")
         if rollNo in students:
             obj = students.pop(rollNo)
             del obj
-            print("Student {rollNo} deleted successfully.")
+            print(f"Student {rollNo} deleted successfully.")
         else:
-            print("Student {rollNo} not found.")
+            print(f"Student {rollNo} not found.")
 
     elif choice == "3":
         if len(students.values()) == 0:
@@ -61,7 +61,6 @@ while True:
         for studentObj in students.values():
             studentObj.calculatePercentage()
             studentObj.studentDetails()
-        
     
     elif choice == "4":
         break
